@@ -14,6 +14,17 @@ imported.  Use SQL and output to a file.
 SilverStripe as points of interest.
 * Import the resultant SQL into your SilverStripe database.
 
+Note that PointOfInterest requires the extension OSMPointOfInterestExtension which can be added as
+follows using the standard configuration method in SilverStripe.  It adds a field for the 
+OpenStreetMap ID, so that PointOfInterest can be updated appropriately if re-importing with a 
+newer version of OpenStreetMap data.
+
+```yml
+PointOfInterest:
+  extensions:
+    ['OSMPointOfInterestExtension']
+```
+
 ## Worked Example - Thai Railway Stations
 ###Extract Data from PostGIS OSM Database
 Create a file of arbitrary name, e.g. osm.sql, with the following query, which extracts OSM id,
