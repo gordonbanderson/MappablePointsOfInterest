@@ -1,0 +1,25 @@
+{
+	"name": "weboftalent/mappable-poi",
+	"description": "Adds point of interest functionality to the mappable module.",
+	"type": "silverstripe-module",
+	"keywords": ["silverstripe", "google maps", "maps", "mappable", "points of interest"],
+	"authors": [
+		{
+			"name": "Gordon Anderson",
+			"email": "gordon.b.anderson@gmail.com",
+			"homepage": "https://github.com/gordonbanderson/MappablePointsOfInterest",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"silverstripe/framework": "~3.1",
+		"weboftalent/mappable": "~3.1",
+	},
+    "support": {
+        "issues": "https://github.com/gordonbanderson/MappablePointsOfInterest/issues"
+    },
+	"require":
+	{
+		"silverstripe/framework": "~3.1"
+	}
+}
