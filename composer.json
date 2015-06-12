@@ -16,8 +16,5 @@
 	"support": {
 		"issues": "https://github.com/gordonbanderson/MappablePointsOfInterest/issues"
 	},
-	"require": {
-		"silverstripe/framework": "~3.1"
-	},
 	"license": "MIT"
 }
