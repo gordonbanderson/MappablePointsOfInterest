@@ -11,18 +11,4 @@ class PointsOfInterestLayer extends DataObject {
 	    'DefaultIcon' => 'Image'
 	);
 
-	function getCMSFields() {
-	    $fields = parent::getCMSFields();
-	    $fields->addFieldToTab('Root.Main', new TextField('Name', 'Name of this layer'));
-	    $fields->addFieldToTab('Root.Main',
-	    	$uf = new UploadField('DefaultIcon',
-	    	_t('PointsOfInterest.ICON',
-	    	'Default Icon'))
-	   	);
-	   	$fields->addFieldToTab('Root.Main', new CheckboxField('ShowGuideMarkers',
-	    				'Show grey guide markers of others points in this layer'));
-	    $uf->setFolderName('mapicons');
-
-	    return $fields;
-	}
 }
