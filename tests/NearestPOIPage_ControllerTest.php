@@ -15,7 +15,7 @@ class NearestPOIPage_ControllerTest extends FunctionalTest {
 		error_log($pages->first()->PointsOfInterestLayerID);
 
 		// location is MBK
-		$url = '/station-finder/find?lat=13.7444513&lng=100.5290196';
+		$url = $Link . 'find?lat=13.7444513&lng=100.5290196';
 		$response = $this->get($url);
 		$this->assertEquals(200, $response->getStatusCode());
 		$expected = array(
@@ -32,7 +32,7 @@ class NearestPOIPage_ControllerTest extends FunctionalTest {
 		$this->assertExactMatchBySelector('table#nearestPOIs td.name', $expected);
 
 		// location is victory monument
-		$url = '/station-finder/find?lat=13.7650776&lng=100.5369724';
+		$url = $Link . 'find?lat=13.7650776&lng=100.5369724';
 		$response = $this->get($url);
 		$this->assertEquals(200, $response->getStatusCode());
 		$expected = array(
