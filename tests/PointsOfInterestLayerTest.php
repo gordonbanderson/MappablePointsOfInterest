@@ -12,10 +12,8 @@ class PointsOfInterestLayerTest extends SapphireTest {
 			$names[] = $field->getName();
 		}
 		
-		error_log(print_r($names,1)); 
 		$expected = array('Name', 'ShowGuideMarkers', 'DefaultIcon');
 		$this->assertEquals($expected, $names);
-
 	}
 
 }
