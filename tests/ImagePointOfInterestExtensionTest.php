@@ -1,8 +1,31 @@
 <?php
 
-	class ImagePointOfInterestExtensionTest extends SapphireTest {
-		public function testUpdateCMSFields() {
-			$this->markTestSkipped('TODO');
+class ImagePointOfInterestExtensionTest extends SapphireTest {
+
+
+	public function setUpOnce() {
+		$this->requiredExtensions = array(
+			'ImagePotTestPageTO' => array('MapExtension', 'ImagePointOfInterestExtension')
+		);
+		parent::setupOnce();
+	}
+
+	public function testUpdateCMSFields() {
+		$page = new ImagePotTestPageTO();
+		$fields = $page->getCMSFields();
+		$tab = $fields->findOrMakeTab('Root.Main');
+		$fields = $tab->FieldList();
+		$names = array();
+		foreach ($fields as $field) {
+			$names[] = $field->getName();
 		}
+		 
+		error_log(print_r($fields,1));
+	}
 
 }
+
+
+class ImagePotTestPageTO extends Page implements TestOnly {
+}
+
