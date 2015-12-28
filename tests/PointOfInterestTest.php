@@ -27,14 +27,14 @@ class PointOfInterestTest extends SapphireTest {
 		// guidemarkers off, expect null returned
 		$layer->ShowGuideMarkers = 0;
 		$layer->write();
-		$fields = $poi->getCMSFields();
+		$poi->getCMSFields();
 		$guidepoints = $poi->getMapField()->getGuidePoints();
 		$this->assertNull($guidepoints);
 		
 		// guidemarkers on, convert datalist to an array of coordinates
 		$layer->ShowGuideMarkers = 1;
 		$layer->write();
-		$fields = $poi->getCMSFields();
+		$poi->getCMSFields();
 		$guidepoints = $poi->getMapField()->getGuidePoints();
 		$expected = array();
 		$coors = array();
