@@ -7,7 +7,7 @@ class ImagePointOfInterestExtensionTest extends SapphireTest {
 		$this->requiredExtensions = array(
 			'ImagePotTestPageTO' => array('MapExtension', 'ImagePointOfInterestExtension')
 		);
-		parent::setupOnce();
+		parent::setUpOnce();
 	}
 
 	public function testUpdateCMSFields() {
