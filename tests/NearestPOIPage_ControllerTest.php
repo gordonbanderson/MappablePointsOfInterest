@@ -11,10 +11,8 @@ class NearestPOIPage_ControllerTest extends FunctionalTest {
 		$link = $nearPage->Link();
 		error_log("POI PAGE LINK:".$link);
 
-		$pages = NearestPOIPage::get();
-		error_log($pages->first()->PointsOfInterestLayerID);
-
 		$url = $link;
+		error_log('TRYING URL ' . $url);
 		$response = $this->get($url);
 		$this->assertEquals(200, $response->getStatusCode());
 
