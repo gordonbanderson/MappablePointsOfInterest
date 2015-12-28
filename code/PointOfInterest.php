@@ -39,10 +39,4 @@ class PointOfInterest extends DataObject {
 	    return $fields;
 	}
 
-	/*
-	FIXME - possible to populate layer id when adding a new record?
-	public function populateDefaults() {
-	    parent::populateDefaults();
-	}
-	*/
 }
