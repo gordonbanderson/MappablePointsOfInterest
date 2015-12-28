@@ -10,7 +10,7 @@
 		"role": "Developer"
 	}],
 	"require": {
-		"silverstripe/framework": "~3.1",
+		"silverstripe/cms": "~3.1",
 		"weboftalent/mappable": "~3.1"
 	},
 	"support": {
