@@ -9,7 +9,7 @@
 			$this->markTestSkipped('TODO');
 		}
 
-		public function testStatic updateElasticsearchMapping() {
+		public function testUpdateElasticsearchMapping() {
 			$this->markTestSkipped('TODO');
 		}
 
