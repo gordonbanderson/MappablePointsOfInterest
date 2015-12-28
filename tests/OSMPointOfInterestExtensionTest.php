@@ -5,7 +5,7 @@ class OSMPointOfInterestExtensionTest extends SapphireTest {
 		$this->requiredExtensions = array(
 			'OSMTestPageTO' => array('MapExtension', 'OSMPointOfInterestExtension')
 		);
-		parent::setupOnce();
+		parent::setUpOnce();
 	}
 
 	public function testUpdateCMSFields() {
