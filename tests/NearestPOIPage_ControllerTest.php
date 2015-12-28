@@ -9,6 +9,8 @@ class NearestPOIPage_ControllerTest extends FunctionalTest {
 		$nearPage = $this->objFromFixture('NearestPOIPage', 'StationFinder');
 		$nearPage->doPublish();
 
+		error_log("POI PAGE LINK:".$nearPage->Link());
+
 		$pages = NearestPOIPage::get();
 		error_log($pages->first()->PointsOfInterestLayerID);
 
