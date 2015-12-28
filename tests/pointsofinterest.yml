@@ -201,3 +201,11 @@ PointsOfInterestLayer:
     Name: Bangkok Transit System
     ShowGuideMarkers: false
     PointsOfInterest: =>PointOfInterest.point1, =>PointOfInterest.point2, =>PointOfInterest.point3, =>PointOfInterest.point4, =>PointOfInterest.point5, =>PointOfInterest.point6, =>PointOfInterest.point7, =>PointOfInterest.point8, =>PointOfInterest.point9 
+
+NearestPOIPage:
+  StationFinder:
+    Title: Find a BTS Station
+    URLSegment: station-finder
+    Content: Use this page to find a BTS railway station
+    ParentID: 0
+    PointsOfInterestLayer: =>PointsOfInterestLayer.BTS
