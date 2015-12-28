@@ -20,7 +20,7 @@ class ImagePointOfInterestExtensionTest extends SapphireTest {
 			$names[] = $field->getName();
 		}
 		 
-		error_log(print_r($fields,1));
+		error_log(print_r($names,1));
 	}
 
 }
