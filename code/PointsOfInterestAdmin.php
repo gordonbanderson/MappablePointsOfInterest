@@ -6,7 +6,7 @@ class PointsOfInterestAdmin extends ModelAdmin {
 	private static $menu_title = 'Points of Interest';
 	private static $menu_icon = '/mappable/icons/menuicon.png';
 
-	static $has_one = array(
+	private static $has_one = array(
 	    'DefaultIcon' => 'Image'
 	);
 }
