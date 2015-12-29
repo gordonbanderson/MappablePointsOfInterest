@@ -7,7 +7,7 @@ class PointsOfInterestLayer extends DataObject {
 
 	private static $many_many = array('PointsOfInterest' => 'PointOfInterest');
 
-	static $has_one = array(
+	private static $has_one = array(
 	    'DefaultIcon' => 'Image'
 	);
 
