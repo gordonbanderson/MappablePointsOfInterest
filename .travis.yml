@@ -15,12 +15,15 @@ env:
     - DB=MYSQL CORE_RELEASE=3.1
     - MODULE_PATH=mappable-poi
 
+#Note, no SQLITE here as use of acos function in Haversine formula
 matrix:
   allow_failures:
     - php: hhvm-nightly
   include:
     - php: 5.6
       env: DB=MYSQL
+    - php: 5.6
+      env: DB=PGSQL
     - php: 5.5
       env: DB=MYSQL
     - php: 5.4
@@ -29,7 +32,18 @@ matrix:
       env: DB=MYSQL
     - php: hhvm
       env: DB=MYSQL
-      before_install:
+    - php: 5.6
+      env: DB=MYSQL CORE_RELEASE=3.2
+    - php: 5.6
+      env: DB=PGSQL CORE_RELEASE=3.2
+    - php: 5.5
+      env: DB=MYSQL CORE_RELEASE=3.2
+    - php: 5.4
+      env: DB=MYSQL CORE_RELEASE=3.2
+    - php: 5.3
+      env: DB=MYSQL CORE_RELEASE=3.2
+    - php: hhvm
+      env: DB=MYSQL CORE_RELEASE=3.2
 
 
 before_script:
