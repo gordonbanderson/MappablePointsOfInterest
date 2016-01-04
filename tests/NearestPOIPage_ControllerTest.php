@@ -7,7 +7,11 @@ class NearestPOIPage_ControllerTest extends FunctionalTest {
 	public function testFind() {
 		// page needs to be live
 		$nearPage = $this->objFromFixture('NearestPOIPage', 'StationFinder');
+		$this->logInWithPermission('ADMIN');
 		$nearPage->doPublish();
+		if(Member::currentUser()) {
+			Member::currentUser()->logOut();
+		}
 		$link = $nearPage->Link();
 		error_log("POI PAGE LINK:".$link);
 
