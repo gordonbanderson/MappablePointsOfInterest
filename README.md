@@ -3,7 +3,8 @@
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/gordonbanderson/MappablePointsOfInterest/badges/quality-score.png?b=3.1)](https://scrutinizer-ci.com/g/gordonbanderson/MappablePointsOfInterest/?branch=3.1)
 [![Code Coverage](https://scrutinizer-ci.com/g/gordonbanderson/MappablePointsOfInterest/badges/coverage.png?b=3.1)](https://scrutinizer-ci.com/g/gordonbanderson/MappablePointsOfInterest/?branch=3.1)
 [![Build Status](https://scrutinizer-ci.com/g/gordonbanderson/MappablePointsOfInterest/badges/build.png?b=3.1)](https://scrutinizer-ci.com/g/gordonbanderson/MappablePointsOfInterest/build-status/3.1)
-[![Latest Stable Version](https://poser.pugx.org/weboftalent/mappable-poi/version)](https://packagist.org/packages/weboftalent/mappable-poi) [![Latest Unstable Version](https://poser.pugx.org/weboftalent/mappable-poi/v/unstable)](//packagist.org/packages/weboftalent/mappable-poi)
+[![Latest Stable Version](https://poser.pugx.org/weboftalent/mappable-poi/version)](https://packagist.org/packages/weboftalent/mappable-poi)
+[![Latest Unstable Version](https://poser.pugx.org/weboftalent/mappable-poi/v/unstable)](//packagist.org/packages/weboftalent/mappable-poi)
 [![Total Downloads](https://poser.pugx.org/weboftalent/mappable-poi/downloads)](https://packagist.org/packages/weboftalent/mappable-poi)
 
 
