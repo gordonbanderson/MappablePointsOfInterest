@@ -7,6 +7,12 @@
 [![Latest Unstable Version](https://poser.pugx.org/weboftalent/mappable-poi/v/unstable)](//packagist.org/packages/weboftalent/mappable-poi)
 [![Total Downloads](https://poser.pugx.org/weboftalent/mappable-poi/downloads)](https://packagist.org/packages/weboftalent/mappable-poi)
 
+![codecov.io](https://codecov.io/github/gordonbanderson/MappablePointsOfInterest/branch.svg?branch=3.1)
+
+[![Latest Stable Version](https://poser.pugx.org/weboftalent/mappable-poi/version)](https://packagist.org/packages/weboftalent/mappable-poi)
+[![Latest Unstable Version](https://poser.pugx.org/weboftalent/mappable-poi/v/unstable)](//packagist.org/packages/weboftalent/mappable-poi)
+[![Total Downloads](https://poser.pugx.org/weboftalent/mappable-poi/downloads)](https://packagist.org/packages/weboftalent/mappable-poi)
+[![License](https://poser.pugx.org/weboftalent/mappable-poi/license)](https://packagist.org/packages/weboftalent/mappable-poi)
 
 ## Maintainers
 
@@ -25,8 +31,5 @@ all of the Seven Eleven shops in Thailand, another could contain only those in B
 * [Using OpenStreetMap Data](./docs/en/OpenStreetMap.md)
 
 ##Requirements
-* SilverStripe 3.1
+* SilverStripe 3.1 or 3.2
 * weboftalent/mappable module - this will be automatically installed if using Composer
-
-##TODO
-* Tests
