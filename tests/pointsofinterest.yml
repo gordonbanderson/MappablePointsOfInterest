@@ -1,0 +1,211 @@
+PointOfInterest:
+
+  point1:
+    Name: Ratchathewi
+    Lat: 13.751846080459000
+    Lon: 100.531572775360000
+
+  point2:
+    Name: Phaya Thai
+    Lat: 13.756924089276700
+    Lon: 100.533811646543000
+
+  point3:
+    Name: Victory Monument
+    Lat: 13.762764662241300
+    Lon: 100.537068488605000
+
+  point4:
+    Name: Sanam Pao
+    Lat: 13.772614550914500
+    Lon: 100.542092765989000
+
+  point5:
+    Name: Ari
+    Lat: 13.779658033009900
+    Lon: 100.544615235307000
+
+  point6:
+    Name: Saphan Khwai
+    Lat: 13.793846082833000
+    Lon: 100.549748837661000
+
+  point7:
+    Name: Mo Chit
+    Lat: 13.802594511242300
+    Lon: 100.553794670038000
+
+  point8:
+    Name: Nana
+    Lat: 13.740541384869900
+    Lon: 100.555457721123000
+
+  point9:
+    Name: Chit Lom
+    Lat: 13.744081610618700
+    Lon: 100.543115138614000
+
+  point10:
+    Name: Tha Kilen
+    Lat: 14.040610267074900
+    Lon: 99.257213011503000
+
+  point11:
+    Name: Wang Pho
+    Lat: 14.120265967696800
+    Lon: 99.139380546527400
+
+  point12:
+    Name: Phrom Phong
+    Lat: 13.730488129670800
+    Lon: 100.569664038353000
+
+  point13:
+    Name: Asok
+    Lat: 13.736999883964200
+    Lon: 100.560440765836000
+
+  point14:
+    Name: Phloen Chit
+    Lat: 13.743039120870800
+    Lon: 100.549076987660000
+
+  point15:
+    Name: Thong Lo
+    Lat: 13.724274297853100
+    Lon: 100.578488279220000
+
+  point16:
+    Name: Ekkamai
+    Lat: 13.719653479485200
+    Lon: 100.585013012623000
+
+  point17:
+    Name: Phra Khanong
+    Lat: 13.715194019870600
+    Lon: 100.591225491633000
+
+  point18:
+    Name: On Nut
+    Lat: 13.705696484923100
+    Lon: 100.601053150673000
+
+  point19:
+    Name: Hua Lamphong
+    Lat: 13.737687420136200
+    Lon: 100.517210420766000
+
+  point20:
+    Name: Sukhumvit
+    Lat: 13.737495793300800
+    Lon: 100.561396393635000
+
+  point21:
+    Name: Phetchaburi
+    Lat: 13.749200275288900
+    Lon: 100.563337563133000
+
+  point22:
+    Name: Phra Ram 9
+    Lat: 13.757848287770300
+    Lon: 100.565224294724000
+
+  point23:
+    Name: Si Lom
+    Lat: 13.729414164131000
+    Lon: 100.537349571458000
+
+  point24:
+    Name: Queen Sirikit National Convention Centre
+    Lat: 13.722718850665100
+    Lon: 100.560188788399000
+
+  point25:
+    Name: Lumphini
+    Lat: 13.725550395640900
+    Lon: 100.545718905465000
+
+  point26:
+    Name: Huai Khwang
+    Lat: 13.778691518950100
+    Lon: 100.573495173376000
+
+  point27:
+    Name: Sutthisan
+    Lat: 13.789444831345000
+    Lon: 100.574010177529000
+
+  point28:
+    Name: Ratchadaphisek
+    Lat: 13.798988870002000
+    Lon: 100.574482152379000
+
+  point29:
+    Name: Thailand Cultural Centre
+    Lat: 13.766330727232600
+    Lon: 100.570119574033000
+
+  point30:
+    Name: Lat Phrao
+    Lat: 13.806622493831200
+    Lon: 100.572940194194000
+
+  point31:
+    Name: Phahon Yothin
+    Lat: 13.812959579632000
+    Lon: 100.561573271915000
+
+  point32:
+    Name: Chatuchak Park
+    Lat: 13.802937005440400
+    Lon: 100.553360693924000
+
+  point33:
+    Name: Kamphaeng Phet
+    Lat: 13.797937115997800
+    Lon: 100.547936576407000
+
+  point34:
+    Name: Bang Sue
+    Lat: 13.803146985715100
+    Lon: 100.539289662977000
+
+  point35:
+    Name: Khlong Toei
+    Lat: 13.722447187404900
+    Lon: 100.553964990616000
+
+  point36:
+    Name: Chon Buri
+    Lat: 13.341093694432000
+    Lon: 100.997171204087000
+
+  point37:
+    Name: Pho Nimit
+    Lat: 13.718878709001800
+    Lon: 100.484472577878000
+
+  point38:
+    Name: Ubon Ratchathani
+    Lat: 15.200726487662200
+    Lon: 104.858431500347000
+
+  point39:
+    Name: Thonburi Station
+    Lat: 13.760634472846200
+    Lon: 100.478690032562000
+
+
+PointsOfInterestLayer:
+  BTS:
+    Name: Bangkok Transit System
+    ShowGuideMarkers: false
+    PointsOfInterest: =>PointOfInterest.point1, =>PointOfInterest.point2, =>PointOfInterest.point3, =>PointOfInterest.point4, =>PointOfInterest.point5, =>PointOfInterest.point6, =>PointOfInterest.point7, =>PointOfInterest.point8, =>PointOfInterest.point9 
+
+NearestPOIPage:
+  StationFinder:
+    Title: Find a BTS Station
+    URLSegment: station-finder
+    Content: Use this page to find a BTS railway station
+    ParentID: 0
+    PointsOfInterestLayer: =>PointsOfInterestLayer.BTS
