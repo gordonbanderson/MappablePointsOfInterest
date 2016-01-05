@@ -33,13 +33,14 @@ class PointsOfInterestLayerExtension extends DataExtension
     }
 
     /**
-     * Use extension point to add the markers
-     * @param  MapAPI &$map reference to object representing the map
+     * Use extension point to add the markers.
+     *
+     * @param MapAPI &$map reference to object representing the map
      * @param  $autozoom will be altered to true for autozoom, false not to
      */
     public function updateBasicMap(&$map, &$autozoom)
     {
-        foreach($this->owner->PointsOfInterestLayers() as $layer) {
+        foreach ($this->owner->PointsOfInterestLayers() as $layer) {
             $layericon = $layer->DefaultIcon();
             if ($layericon->ID === 0) {
                 $layericon = null;
@@ -60,8 +61,9 @@ class PointsOfInterestLayerExtension extends DataExtension
     }
 
     /**
-     * Only set has geo to true if layers exist
-     * @param  boolean &$hasGeo will be set to true if any layers
+     * Only set has geo to true if layers exist.
+     *
+     * @param bool &$hasGeo will be set to true if any layers
      */
     public function updateHasGeo(&$hasGeo)
     {
