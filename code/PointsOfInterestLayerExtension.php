@@ -57,7 +57,8 @@ class PointsOfInterestLayerExtension extends DataExtension
                 }
             }
         }
-        $map->setClusterer(true);
+        $useClusterer = Config::inst()->get('PointsOfInterestLayerExtension', 'use_clusterer');
+        $map->setClusterer($useClusterer);
     }
 
     /**
