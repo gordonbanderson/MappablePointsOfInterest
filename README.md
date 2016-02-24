@@ -1,7 +1,6 @@
 # Mappable - Points of Interest
 [![Build Status](https://travis-ci.org/gordonbanderson/MappablePointsOfInterest.svg?branch=master)](https://travis-ci.org/gordonbanderson/MappablePointsOfInterest)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/gordonbanderson/MappablePointsOfInterest/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/gordonbanderson/MappablePointsOfInterest/?branch=master)
-[![Code Coverage](https://scrutinizer-ci.com/g/gordonbanderson/MappablePointsOfInterest/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/gordonbanderson/MappablePointsOfInterest/?branch=master)
 [![Build Status](https://scrutinizer-ci.com/g/gordonbanderson/MappablePointsOfInterest/badges/build.png?b=master)](https://scrutinizer-ci.com/g/gordonbanderson/MappablePointsOfInterest/build-status/master)
 [![codecov.io](https://codecov.io/github/gordonbanderson/MappablePointsOfInterest/coverage.svg?branch=master)](https://codecov.io/github/gordonbanderson/MappablePointsOfInterest?branch=master)
 

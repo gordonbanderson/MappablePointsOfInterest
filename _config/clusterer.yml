@@ -1,0 +1,6 @@
+---
+Name: mappable-poi-clusterer
+After: 'framework/*','cms/*'
+---
+PointsOfInterestLayerExtension:
+  use_clusterer: true
