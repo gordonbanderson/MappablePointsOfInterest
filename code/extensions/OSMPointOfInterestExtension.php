@@ -1,5 +1,8 @@
 <?php
 
+use SilverStripe\Forms\FieldList;
+use SilverStripe\ORM\DataExtension;
+
 class OSMPointOfInterestExtension extends DataExtension
 {
     private static $db = array(

@@ -1,5 +1,15 @@
 <?php
 
+namespace WebOfTalent\MappablePointsOfInterest;
+
+
+
+use WebOfTalent\MappablePointsOfInterest\POIMapPage;
+use WebOfTalent\MappablePointsOfInterest\PointsOfInterestLayerExtension;
+use SilverStripe\Dev\SapphireTest;
+
+
+
     class POIMapPageTest extends SapphireTest
     {
         public function testGetCMSFields()
@@ -8,7 +18,7 @@
 
             // check extensions
             $this->assertTrue($poiMapPage->hasExtension('MapExtension'));
-            $this->assertTrue($poiMapPage->hasExtension('PointsOfInterestLayerExtension'));
+            $this->assertTrue($poiMapPage->hasExtension(PointsOfInterestLayerExtension::class));
 
             // check that the location tab has been removed
             $fields = $poiMapPage->getCMSFields();

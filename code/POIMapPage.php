@@ -1,5 +1,13 @@
 <?php
 
+namespace WebOfTalent\MappablePointsOfInterest;
+
+use Page;
+
+use PageController;
+
+
+
 class POIMapPage extends Page
 {
     public function getCMSFields()
@@ -11,6 +19,6 @@ class POIMapPage extends Page
     }
 }
 
-class POIMapPage_Controller extends Page_Controller
+class POIMapPage_Controller extends PageController
 {
 }

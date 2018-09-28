@@ -1,5 +1,14 @@
 <?php
 
+namespace WebOfTalent\MappablePointsOfInterest;
+
+
+
+use WebOfTalent\MappablePointsOfInterest\PointsOfInterestAdmin;
+use SilverStripe\Dev\SapphireTest;
+
+
+
 class PointsOfInterestAdminTest extends SapphireTest
 {
     public function testManagedModels()

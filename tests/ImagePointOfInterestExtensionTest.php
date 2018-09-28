@@ -1,5 +1,15 @@
 <?php
 
+namespace WebOfTalent\MappablePointsOfInterest;
+
+
+use Page;
+
+use SilverStripe\Dev\SapphireTest;
+use SilverStripe\Dev\TestOnly;
+
+
+
 class ImagePointOfInterestExtensionTest extends SapphireTest
 {
     public function setUpOnce()

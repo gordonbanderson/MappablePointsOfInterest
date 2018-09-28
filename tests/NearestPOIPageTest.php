@@ -1,5 +1,14 @@
 <?php
 
+namespace WebOfTalent\MappablePointsOfInterest;
+
+
+
+use WebOfTalent\MappablePointsOfInterest\NearestPOIPage;
+use SilverStripe\Dev\SapphireTest;
+
+
+
 class NearestPOIPageTest extends SapphireTest
 {
     protected static $fixture_file = 'mappable-poi/tests/pointsofinterest.yml';

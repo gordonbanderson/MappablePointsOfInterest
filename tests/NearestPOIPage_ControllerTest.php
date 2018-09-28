@@ -1,5 +1,15 @@
 <?php
 
+namespace WebOfTalent\MappablePointsOfInterest;
+
+
+
+use WebOfTalent\MappablePointsOfInterest\NearestPOIPage;
+use SilverStripe\Security\Member;
+use SilverStripe\Dev\FunctionalTest;
+
+
+
 class NearestPOIPage_ControllerTest extends FunctionalTest
 {
     protected static $fixture_file = 'mappable-poi/tests/pointsofinterest.yml';
@@ -7,7 +17,7 @@ class NearestPOIPage_ControllerTest extends FunctionalTest
     public function testFind()
     {
         // page needs to be live
-        $nearPage = $this->objFromFixture('NearestPOIPage', 'StationFinder');
+        $nearPage = $this->objFromFixture(NearestPOIPage::class, 'StationFinder');
         $this->logInWithPermission('ADMIN');
         $nearPage->doPublish();
         if (Member::currentUser()) {

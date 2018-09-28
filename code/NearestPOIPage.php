@@ -1,13 +1,32 @@
 <?php
 
+namespace WebOfTalent\MappablePointsOfInterest;
+
+use Page;
+
+
+
+
+
+
+use WebOfTalent\MappablePointsOfInterest\PointsOfInterestLayer;
+use SilverStripe\Forms\DropdownField;
+use SilverStripe\ORM\DB;
+use SilverStripe\ORM\ArrayList;
+use SilverStripe\ORM\DataObject;
+use SilverStripe\View\ArrayData;
+use PageController;
+
+
+
 class NearestPOIPage extends Page
 {
-    public static $has_one = array('PointsOfInterestLayer' => 'PointsOfInterestLayer');
+    public static $has_one = array('PointsOfInterestLayer' => PointsOfInterestLayer::class);
 
     public function getCMSFields()
     {
         $fields = parent::getCMSFields();
-        $field = DropdownField::create('PointsOfInterestLayerID', 'PointsOfInterestLayer',
+        $field = DropdownField::create('PointsOfInterestLayerID', PointsOfInterestLayer::class,
             PointsOfInterestLayer::get()->map('ID', 'Title'))
                 ->setEmptyString('-- Select one --');
         $fields->addFieldToTab('Root.Layer', $field);
@@ -16,7 +35,7 @@ class NearestPOIPage extends Page
     }
 }
 
-class NearestPOIPage_Controller extends Page_Controller
+class NearestPOIPage_Controller extends PageController
 {
     private static $allowed_actions = array('find');
 

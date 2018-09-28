@@ -1,11 +1,22 @@
 <?php
 
+namespace WebOfTalent\MappablePointsOfInterest;
+
+
+use Page;
+
+use WebOfTalent\MappablePointsOfInterest\PointsOfInterestLayerExtension;
+use SilverStripe\Dev\SapphireTest;
+use SilverStripe\Dev\TestOnly;
+
+
+
     class PointsOfInterestLayerExtensionTest extends SapphireTest
     {
         public function setUpOnce()
         {
             $this->requiredExtensions = array(
-            'POILayerExtensionPageTO' => array('MapExtension', 'PointsOfInterestLayerExtension'),
+            'POILayerExtensionPageTO' => array('MapExtension', PointsOfInterestLayerExtension::class),
         );
             parent::setUpOnce();
         }

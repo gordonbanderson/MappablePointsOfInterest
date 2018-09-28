@@ -1,3 +1,5 @@
 CacheKeyHelper:
-  SiteTree: ['POIMapPage']
-  DataObject: ['PointOfInterest']
+  SilverStripe\CMS\Model\SiteTree:
+    - WebOfTalent\MappablePointsOfInterest\POIMapPage
+  SilverStripe\ORM\DataObject:
+    - WebOfTalent\MappablePointsOfInterest\PointOfInterest

@@ -1,5 +1,15 @@
 <?php
 
+namespace WebOfTalent\MappablePointsOfInterest;
+
+
+
+use WebOfTalent\MappablePointsOfInterest\PointOfInterest;
+use WebOfTalent\MappablePointsOfInterest\PointsOfInterestLayer;
+use SilverStripe\Dev\SapphireTest;
+
+
+
 class PointOfInterestTest extends SapphireTest
 {
     protected static $fixture_file = 'mappable-poi/tests/pointsofinterest.yml';
@@ -20,7 +30,7 @@ class PointOfInterestTest extends SapphireTest
 
     public function testShowGuideMarkers()
     {
-        $layer = $this->objFromFixture('PointsOfInterestLayer', 'BTS');
+        $layer = $this->objFromFixture(PointsOfInterestLayer::class, 'BTS');
         error_log('LAYER: '.$layer->Name);
         $pois = $layer->PointsOfInterest();
         $poi = $pois->first();

@@ -1,10 +1,20 @@
 <?php
 
+namespace WebOfTalent\MappablePointsOfInterest;
+
+
+
+use WebOfTalent\MappablePointsOfInterest\PointsOfInterestLayer;
+use SilverStripe\Forms\TextField;
+use SilverStripe\ORM\DataObject;
+
+
+
 class PointOfInterest extends DataObject
 {
     private static $description = 'Represents a point of interest on a map, e.g. railway station';
 
-    private static $belongs_many_many = array('PointsOfInterestLayers' => 'PointsOfInterestLayer');
+    private static $belongs_many_many = array('PointsOfInterestLayers' => PointsOfInterestLayer::class);
 
     private static $db = array(
         'Name' => 'Varchar',
