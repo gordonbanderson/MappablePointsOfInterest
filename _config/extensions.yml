@@ -1,11 +1,10 @@
 ---
 Name: mappable-poi
-After: 'framework/*','cms/*'
 ---
 WebOfTalent\MappablePointsOfInterest\PointOfInterest:
   extensions:
-    - MapExtension
+    - WebOfTalent\Mappable\MapExtension
 WebOfTalent\MappablePointsOfInterest\POIMapPage:
   extensions:
     - WebOfTalent\MappablePointsOfInterest\PointsOfInterestLayerExtension
-    - MapExtension
+    - WebOfTalent\Mappable\MapExtension

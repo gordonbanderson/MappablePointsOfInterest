@@ -8,6 +8,8 @@ use SilverStripe\ORM\DataObject;
 
 class PointsOfInterestLayer extends DataObject
 {
+    private static $table_name = 'PointsOfInterestLayer';
+
     private static $db = array(
         'Name' => 'Varchar',
         'ShowGuideMarkers' => 'Boolean',

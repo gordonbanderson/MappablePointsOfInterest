@@ -8,6 +8,8 @@ use PageController;
 
 class POIMapPage extends Page
 {
+    private static $table_name = 'POIMapPage';
+
     public function getCMSFields()
     {
         $fields = parent::getCMSFields();

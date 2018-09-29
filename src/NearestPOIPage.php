@@ -19,6 +19,8 @@ use PageController;
 
 class NearestPOIPage extends Page
 {
+    private static $table_name = 'NearestPOIPage';
+
     private static $has_one = array('PointsOfInterestLayer' => PointsOfInterestLayer::class);
 
     public function getCMSFields()

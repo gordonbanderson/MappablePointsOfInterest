@@ -8,6 +8,8 @@ use SilverStripe\ORM\DataObject;
 
 class PointOfInterest extends DataObject
 {
+    private static $table_name = 'PointsOfInterest';
+
     private static $description = 'Represents a point of interest on a map, e.g. railway station';
 
     private static $belongs_many_many = array('PointsOfInterestLayers' => PointsOfInterestLayer::class);
