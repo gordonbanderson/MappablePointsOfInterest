@@ -2,10 +2,6 @@
 
 namespace WebOfTalent\MappablePointsOfInterest;
 
-
-
-
-
 use WebOfTalent\MappablePointsOfInterest\PointsOfInterestLayer;
 use SilverStripe\Forms\FieldList;
 use SilverStripe\Forms\GridField\GridFieldConfig_RelationEditor;
@@ -13,8 +9,6 @@ use SilverStripe\Forms\GridField\GridFieldAddExistingAutocompleter;
 use SilverStripe\Forms\GridField\GridFieldPaginator;
 use SilverStripe\Forms\GridField\GridField;
 use SilverStripe\ORM\DataExtension;
-
-
 
 class PointsOfInterestLayerExtension extends DataExtension
 {
@@ -37,11 +31,13 @@ class PointsOfInterestLayerExtension extends DataExtension
     {
         $gridConfig2 = GridFieldConfig_RelationEditor::create();
         $gridConfig2->getComponentByType(
-            GridFieldAddExistingAutocompleter::class)->
-            setSearchFields(array('Name')
-        );
+            GridFieldAddExistingAutocompleter::class
+        )->
+            setSearchFields(array('Name'));
         $gridConfig2->getComponentByType(GridFieldPaginator::class)->setItemsPerPage(100);
-        $gridField2 = new GridField('POI Layers', 'POI Layers:',
+        $gridField2 = new GridField(
+            'POI Layers',
+            'POI Layers:',
             $this->owner->PointsOfInterestLayers(),
             $gridConfig2
         );

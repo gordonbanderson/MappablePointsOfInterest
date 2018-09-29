@@ -8,8 +8,6 @@ use SilverStripe\ORM\DataObject;
 use SilverStripe\View\ArrayData;
 use PageController;
 
-
-
 class NearestPOIPage_Controller extends PageController
 {
     private static $allowed_actions = array('find');

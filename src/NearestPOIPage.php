@@ -17,8 +17,6 @@ use SilverStripe\ORM\DataObject;
 use SilverStripe\View\ArrayData;
 use PageController;
 
-
-
 class NearestPOIPage extends Page
 {
     private static $has_one = array('PointsOfInterestLayer' => PointsOfInterestLayer::class);
@@ -26,8 +24,11 @@ class NearestPOIPage extends Page
     public function getCMSFields()
     {
         $fields = parent::getCMSFields();
-        $field = DropdownField::create('PointsOfInterestLayerID', PointsOfInterestLayer::class,
-            PointsOfInterestLayer::get()->map('ID', 'Title'))
+        $field = DropdownField::create(
+            'PointsOfInterestLayerID',
+            PointsOfInterestLayer::class,
+            PointsOfInterestLayer::get()->map('ID', 'Title')
+        )
                 ->setEmptyString('-- Select one --');
         $fields->addFieldToTab('Root.Layer', $field);
 

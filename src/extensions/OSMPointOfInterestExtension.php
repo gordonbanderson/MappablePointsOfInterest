@@ -13,7 +13,7 @@ class OSMPointOfInterestExtension extends DataExtension
     // given millions of possible POIs an index is handy
     private static $indexes = array(
         'OpenStreetMapID' => true,
-   );
+    );
 
     /* The openstreetmap id is only for scripting purposes */
     public function updateCMSFields(FieldList $fields)

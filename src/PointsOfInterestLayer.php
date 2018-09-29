@@ -2,12 +2,9 @@
 
 namespace WebOfTalent\MappablePointsOfInterest;
 
-
 use WebOfTalent\MappablePointsOfInterest\PointOfInterest;
 use SilverStripe\Assets\Image;
 use SilverStripe\ORM\DataObject;
-
-
 
 class PointsOfInterestLayer extends DataObject
 {

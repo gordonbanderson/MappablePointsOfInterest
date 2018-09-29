@@ -6,8 +6,6 @@ use Page;
 
 use PageController;
 
-
-
 class POIMapPage extends Page
 {
     public function getCMSFields()

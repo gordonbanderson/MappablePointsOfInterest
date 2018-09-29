@@ -2,13 +2,9 @@
 
 namespace WebOfTalent\MappablePointsOfInterest;
 
-
-
 use WebOfTalent\MappablePointsOfInterest\PointsOfInterestLayer;
 use SilverStripe\Forms\TextField;
 use SilverStripe\ORM\DataObject;
-
-
 
 class PointOfInterest extends DataObject
 {

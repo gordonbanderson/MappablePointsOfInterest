@@ -2,13 +2,10 @@
 
 namespace WebOfTalent\MappablePointsOfInterest;
 
-
 use WebOfTalent\MappablePointsOfInterest\PointsOfInterestLayer;
 use WebOfTalent\MappablePointsOfInterest\PointOfInterest;
 use SilverStripe\Assets\Image;
 use SilverStripe\Admin\ModelAdmin;
-
-
 
 class PointsOfInterestAdmin extends ModelAdmin
 {
