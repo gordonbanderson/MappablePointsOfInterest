@@ -8,7 +8,7 @@ use SilverStripe\ORM\DataObject;
 
 class PointOfInterest extends DataObject
 {
-    private static $table_name = 'PointsOfInterest';
+    private static $table_name = 'PointOfInterest';
 
     private static $description = 'Represents a point of interest on a map, e.g. railway station';
 
