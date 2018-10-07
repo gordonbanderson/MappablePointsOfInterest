@@ -18,7 +18,3 @@ class POIMapPage extends Page
         return $fields;
     }
 }
-
-class POIMapPage_Controller extends PageController
-{
-}
