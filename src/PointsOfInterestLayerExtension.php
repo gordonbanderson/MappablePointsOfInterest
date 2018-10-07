@@ -2,6 +2,7 @@
 
 namespace WebOfTalent\MappablePointsOfInterest;
 
+use SilverStripe\Forms\GridField\GridFieldConfig_RecordEditor;
 use WebOfTalent\MappablePointsOfInterest\PointsOfInterestLayer;
 use SilverStripe\Forms\FieldList;
 use SilverStripe\Forms\GridField\GridFieldConfig_RelationEditor;
@@ -12,11 +13,11 @@ use SilverStripe\ORM\DataExtension;
 
 class PointsOfInterestLayerExtension extends DataExtension
 {
-    public static $many_many = array(
+    private static $many_many = array(
         'PointsOfInterestLayers' => PointsOfInterestLayer::class,
     );
 
-    public static $belongs_many_many_extraFields = array(
+    private static $belongs_many_many_extraFields = array(
         'PointsOfInterestLayers' => array(
             'SortOrder' => 'Int',
         ),
@@ -29,19 +30,9 @@ class PointsOfInterestLayerExtension extends DataExtension
      */
     public function updateCMSFields(FieldList $fields)
     {
-        $gridConfig2 = GridFieldConfig_RelationEditor::create();
-        $gridConfig2->getComponentByType(
-            GridFieldAddExistingAutocompleter::class
-        )->
-            setSearchFields(array('Name'));
-        $gridConfig2->getComponentByType(GridFieldPaginator::class)->setItemsPerPage(100);
-        $gridField2 = new GridField(
-            'POI Layers',
-            'POI Layers:',
-            $this->owner->PointsOfInterestLayers(),
-            $gridConfig2
-        );
-        $fields->addFieldToTab('Root.MapLayers', $gridField2);
+        $config = GridFieldConfig_RelationEditor::create();
+        $gridField = new GridField('MapLayers', 'Map Layers', $this->owner->PointsOfInterestLayers(), $config);
+        $fields->addFieldToTab('Root.MapLayers', $gridField);
     }
 
     /**
